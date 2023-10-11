@@ -23,16 +23,16 @@ public class Fish {
             this.name = name;
         }
 
-        if (Double.isNaN(length) || Double.isInfinite(length) || 
-            length <= 0) {
-                this.length = 8.0;
+        if (length == null ||Double.isNaN(length) || 
+            Double.isInfinite(length) || length <= 0) {
+            this.length = 8.0;
         } else {
             this.length = length;
         }
 
-        if (Double.isNaN(weight) || Double.isInfinite(weight) || 
-            weight <= 0) {
-                this.weight = 2.0;
+        if (weight == null || Double.isNaN(weight) || 
+            Double.isInfinite(weight) || weight <= 0) {
+            this.weight = 2.0;
         } else {
             this.weight = weight;
         }
@@ -40,14 +40,18 @@ public class Fish {
     }
 
     /**
-     * Constructor for a Fish with default values
+     * Constructor for a Fish with default values. <br>
+     * Name: Nemo<br>
+     * Length: 5.0<br>
+     * Weight: 12.0
      */
     public Fish() {
         this("Nemo", 5.0, 12.0);
     }
 
     /**
-     * Copy constructor for Fish object from other Fish
+     * Copy constructor: deep copies other Fish
+     * @param other
      */
     public Fish(Fish other) {
         this(other.name, other.length, other.weight);
@@ -85,7 +89,8 @@ public class Fish {
     }
 
     /**
-     * String interpretation of this Fish
+     * toString
+     * @return String interpretation of this Fish
      */
     @Override
     public String toString() {
