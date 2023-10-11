@@ -1,3 +1,8 @@
+/**
+ * Represents a Catfish object.
+ * @author jvogt33
+ * @version 1.2
+ */
 public class Catfish extends Fish {
     //Data
     //Default should be 8.0
@@ -17,7 +22,7 @@ public class Catfish extends Fish {
     }
 
     /**
-     * Default constructor<br>
+     * Default constructor.<br>
      * Name: Bubba<br>
      * Length: 52<br>
      * Weight: 720<br>
@@ -28,16 +33,16 @@ public class Catfish extends Fish {
     }
 
     /**
-     * Copy constructor: deep copies other Catfish
-     * @param other
+     * Copy constructor: deep copies other Catfish.
+     * @param other Catfish object to deep-copy from.
      */
     public Catfish(Catfish other) {
         this(other.name, other.length, other.weight, other.whiskerLength);
     }
 
     /**
-     * Sets whiskerLength while preventing invalid values (infinite, null, negative)
-     * @param whiskerLength
+     * Sets whiskerLength while preventing invalid values (infinite, null, negative).
+     * @param whiskerLength Desired length of whiskers as a Double.
      */
     public void setWhiskerLength(Double whiskerLength) {
         if (whiskerLength == null || Double.isNaN(whiskerLength)

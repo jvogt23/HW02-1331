@@ -1,10 +1,15 @@
 import java.util.Random;
 
+/**
+ * Represents a FlyingFish object.
+ * @author jvogt33
+ * @version 1.2
+ */
 public class FlyingFish extends Fish {
     private int flightTime;
 
     /**
-     * Instantiates new FlyingFish from specified values
+     * Instantiates new FlyingFish from specified values.
      * @param name The name of this FlyingFish
      * @param length the length of this FlyingFish
      * @param weight the weight of this FlyingFish
@@ -20,14 +25,14 @@ public class FlyingFish extends Fish {
     }
 
     /**
-     * Instantiates new FlyingFish from default values
+     * Instantiates new FlyingFish from default values.
      */
     public FlyingFish() {
         this("Gilbert", 12.0, 24.0, 36);
     }
 
     /**
-     * Deep copies other FlyingFish to create a new FlyingFish
+     * Deep copies other FlyingFish to create a new FlyingFish.
      * @param other A FlyingFish object to copy values from
      */
     public FlyingFish(FlyingFish other) {

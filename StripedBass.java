@@ -1,3 +1,8 @@
+/**
+ * Represents a StripedBass object.
+ * @author jvogt33
+ * @version 1.2
+ */
 public class StripedBass extends Fish {
     //Data
     //Defaults to 25
@@ -6,7 +11,7 @@ public class StripedBass extends Fish {
     private Catfish bestFriend;
 
     /**
-     * Instantiates new StripedBass with specified values
+     * Instantiates new StripedBass with specified values.
      * @param name This StripedBass's name
      * @param length Length, in inches, defaults to Fish defaults if invalid number given
      * @param weight Weight, in ounces, defaults to Fish defaults if invalid number given
@@ -31,14 +36,14 @@ public class StripedBass extends Fish {
     }
 
     /**
-     * Instantiates new StripedBass with default values
+     * Instantiates new StripedBass with default values.
      */
     public StripedBass() {
         this("Striper", 30.0, 320.0, 14, false, null);
     }
 
     /**
-     * Deep copies a StripedBass to a new object
+     * Deep copies a StripedBass to a new object.
      * @param other StripedBass whose attributes should be deep copied.
      */
     public StripedBass(StripedBass other) {
@@ -46,7 +51,7 @@ public class StripedBass extends Fish {
     }
 
     /**
-     * Migrates this StripedBass to the other water body type<br>
+     * Migrates this StripedBass to the other water body type.<br>
      * if it does not have a bestFriend
      */
     public void migrate() {

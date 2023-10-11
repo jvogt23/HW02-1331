@@ -1,6 +1,7 @@
 /**
  * Represents a Fish object.
  * @author jvogt33
+ * @version 1.2
  */
 public class Fish {
     //Data
@@ -11,7 +12,7 @@ public class Fish {
     private static int totalFish = 0;
 
     /**
-     * Constructor for Fish object
+     * Constructor for Fish object.
      * @param name The name of the Fish
      * @param length The length of the Fish, as a positive Double
      * @param weight The weight of the Fish as a positive Double
@@ -50,8 +51,8 @@ public class Fish {
     }
 
     /**
-     * Copy constructor: deep copies other Fish
-     * @param other
+     * Copy constructor: deep copies other Fish.
+     * @param other Fish object to be deep-copied.
      */
     public Fish(Fish other) {
         this(other.name, other.length, other.weight);
@@ -59,8 +60,8 @@ public class Fish {
 
     //Methods
     /**
-     * formatLength
-     * @return String interpretation of this Fish's length
+     * formatLength.
+     * @return String interpretation of this Fish's length.
      */
     public String formatLength() {
         String o = "";
@@ -72,8 +73,8 @@ public class Fish {
     }
 
     /**
-     * formatWeight
-     * @return String interpretation of this Fish's weight
+     * formatWeight.
+     * @return String interpretation of this Fish's weight.
      */
     public String formatWeight() {
         String o = "";
@@ -89,8 +90,8 @@ public class Fish {
     }
 
     /**
-     * toString
-     * @return String interpretation of this Fish
+     * toString.
+     * @return String interpretation of this Fish.
      */
     @Override
     public String toString() {
