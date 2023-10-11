@@ -4,7 +4,7 @@
  */
 public class Fish {
     //Data
-    protected String name;
+    protected final String name;
     protected Double length;
     protected Double weight;
     //Only modify in the body of Fish constructor
