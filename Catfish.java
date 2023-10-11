@@ -1,4 +1,4 @@
-public class Catfish extends Fish{
+public class Catfish extends Fish {
     //Data
     //Default should be 8.0
     private Double whiskerLength;
@@ -40,8 +40,8 @@ public class Catfish extends Fish{
      * @param whiskerLength
      */
     public void setWhiskerLength(Double whiskerLength) {
-        if (whiskerLength == null || Double.isNaN(whiskerLength) || 
-            Double.isInfinite(whiskerLength) || whiskerLength <= 0) {
+        if (whiskerLength == null || Double.isNaN(whiskerLength)
+            || Double.isInfinite(whiskerLength) || whiskerLength <= 0) {
             this.whiskerLength = 8.0;
         } else {
             this.whiskerLength = whiskerLength;
@@ -53,10 +53,10 @@ public class Catfish extends Fish{
      * @return Boolean representing status as Shaggy/Not Shaggy
      */
     public boolean isShaggy() {
-       if (this.whiskerLength > this.length) {
-           return true;
-       }
-       return false;
+        if (this.whiskerLength > this.length) {
+            return true;
+        }
+        return false;
     }
 
     /**

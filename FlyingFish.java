@@ -62,8 +62,8 @@ public class FlyingFish extends Fish {
     public String toString() {
         String o = super.toString();
         o += String.format(
-            " I'm a flying fish, and my flight time record is %d, so my power is %.2f."
-            , this.flightTime, this.calculatePower());
+            " I'm a flying fish, and my flight time record is %d, so my power is %.2f.",
+            this.flightTime, this.calculatePower());
         return o;
     }
 }

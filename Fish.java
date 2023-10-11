@@ -17,21 +17,21 @@ public class Fish {
      * @param weight The weight of the Fish as a positive Double
      */
     public Fish(String name, Double length, Double weight) {
-        if (name == null || name.length() == 0 || name.trim() == "") {
+        if (name == null || name.length() == 0 || name.trim().equals("")) {
             this.name = "Nemo";
         } else {
             this.name = name;
         }
 
-        if (length == null ||Double.isNaN(length) || 
-            Double.isInfinite(length) || length <= 0) {
+        if (length == null || Double.isNaN(length)
+            || Double.isInfinite(length) || length <= 0) {
             this.length = 8.0;
         } else {
             this.length = length;
         }
 
-        if (weight == null || Double.isNaN(weight) || 
-            Double.isInfinite(weight) || weight <= 0) {
+        if (weight == null || Double.isNaN(weight)
+            || Double.isInfinite(weight) || weight <= 0) {
             this.weight = 2.0;
         } else {
             this.weight = weight;
